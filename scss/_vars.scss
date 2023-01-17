@@ -7,6 +7,12 @@ $default: #5a5a5a;
 	font-weight: 700;
 }
 
+%title-lite {
+	@extend %title-font;
+	line-height: 144%;
+	color: $title;
+}
+
 @function max($numbers...) {
 	@return m#{a}x(#{$numbers});
 }

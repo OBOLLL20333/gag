@@ -65,6 +65,10 @@ body {
 	}
 }
 
+.title-lite {
+	@extend %title-lite;
+}
+
 .info-email {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
