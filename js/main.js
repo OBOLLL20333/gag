@@ -51,16 +51,37 @@ $(function () {
 			{
 				breakpoint: 768,
 				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 585,
+				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
+					dots: false,
 				}
-			}
+			},
+			{
+				breakpoint: 375,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
 		]
 	});
 
 	$('.article-slider__box').slick({
 		prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="images/arrow-left.svg" alt=""></button>',
 		nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="images/arrow-right.svg" alt=""></button>',
+	});
+
+	var mixer = mixitup('.gallery__inner', {
+		load: {
+			filter: '.living'
+		}
 	});
 })
 

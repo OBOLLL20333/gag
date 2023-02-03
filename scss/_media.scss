@@ -292,6 +292,16 @@
 	}
 }
 
+@media (max-width:585px) {
+	.contact-slider {
+		.contact-slider .slick-dots {
+			display: none;
+		}
+	}
+
+}
+
+
 @media (max-width:540px) {
 
 	.menu__list-link--active::after {
