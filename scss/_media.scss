@@ -1,4 +1,51 @@
+@media (max-width:1300px) {
+	.top {
+		&__slider-title {
+			font-size: 62px;
+		}
+
+		&__slider-img {
+			height: 640px;
+		}
+	}
+
+	.collection {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.map {
+		margin-top: 0;
+	}
+}
+
+
+
 @media (max-width:992px) {
+	.gallery {
+		&__items {
+			grid-gap: 10px;
+		}
+
+		&__btn {
+			margin: 0;
+			padding: 6px 10px;
+		}
+	}
+
+	.about {
+		&__content {
+			padding: 40px 0;
+		}
+
+		&__title {
+			margin-right: 0;
+		}
+
+		&__text {
+			padding-left: 0;
+		}
+	}
+
 	.footer {
 
 		&__social,
@@ -7,7 +54,52 @@
 			margin-right: 30px;
 		}
 	}
+
+	.inspiration {
+		&__images {
+			display: none;
+		}
+	}
 }
+
+@media (max-width:850px) {
+
+	.new-collection__text {
+		width: 100%;
+	}
+
+	.top {
+
+		&__slider-title {
+			font-size: 44px;
+		}
+
+		&__slider-img {
+			height: 540px;
+		}
+	}
+
+	.works-path {
+		&__item {
+			width: 350px;
+		}
+
+		&__item--prodaction {
+			margin: 0 0 0 auto;
+		}
+	}
+
+	.contact {
+
+		.contact &__social,
+		&__box,
+		&__form {
+			padding: 0;
+		}
+	}
+}
+
+
 
 @media (max-width:768px) {
 	.header {
@@ -30,11 +122,41 @@
 		margin: 0;
 	}
 
+	.collection {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.decor {
+		padding: 70px 0px 55px;
+	}
+
+	.works-path {
+		&__item--measuring {
+			margin-left: 100px;
+		}
+	}
+
+	.gallery {
+		&__buttons {
+			display: grid;
+		}
+
+		&__btn {
+			margin-bottom: 10px;
+		}
+	}
+
+	.map {
+
+		iframe {
+			height: 378px;
+		}
+	}
+
 	.footer {
 		&__inner {
 			flex-wrap: wrap;
 			justify-content: space-between;
-			align-items: center;
 		}
 
 		&__menu,
@@ -61,9 +183,121 @@
 			max-width: 100%;
 		}
 	}
+
+	.about {
+		&__prev {
+			padding: 80px 0;
+		}
+	}
+
+	.partners {
+		&__items {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+@media (max-width:650px) {
+	.top {
+		&__inner {
+			padding-top: 30px;
+			padding-bottom: 25px;
+
+			&::after {
+				height: 100%;
+			}
+		}
+
+		&__slider-item {
+			.top__slider-img {
+				display: none;
+			}
+		}
+
+		&__slider-info {
+			padding: 0;
+			width: 100%;
+		}
+
+		&__slider-title {
+			margin-bottom: 25px;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&__slider-text {
+			margin-bottom: 15px;
+		}
+	}
+
+	.works-path {
+
+		&__items-box::after,
+		&__item--prodaction::after,
+		&__item--measuring::before {
+			display: none;
+		}
+
+		&__items-box {
+			border: none;
+			flex-wrap: wrap;
+		}
+
+		&__item--measuring {
+			padding-bottom: 38px;
+		}
+
+
+
+		&__item--prodaction,
+		&__item--measuring {
+			margin-left: 0;
+			padding-top: 0;
+		}
+
+		&__item--prodaction {
+			order: 1;
+			padding: 0;
+		}
+
+		&__items {
+			// display: flex;
+		}
+
+		&__item {
+			width: 100%;
+		}
+	}
+
+	.block-box {
+
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+
+		&__img-link {
+			display: block;
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
 }
 
 @media (max-width:540px) {
+
+	.menu__list-link--active::after {
+		display: none;
+	}
+
 	.logo {
 		order: -1;
 		position: relative;
@@ -125,19 +359,68 @@
 			padding: 15px 0;
 		}
 	}
+
+	.collection {
+		grid-template-columns: repeat(1, 1fr);
+
+		&__item {
+
+			margin: 0 auto;
+		}
+	}
+
+	.gallery {
+		&__items {
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 10px 0px;
+		}
+
+		&.gallery-page &__item:nth-child(8),
+		&__item:first-child {
+			grid-column: 1;
+			grid-row: 1;
+		}
+	}
+
+	.block-box {
+		.block-box__item-title {
+			font-size: 18px;
+		}
+	}
+
+	.about {
+		.about__prev-title {
+			font-size: 40px;
+		}
+	}
+
+	.inspiration {
+		.inspiration__item-content {
+			font-size: 16px;
+		}
+
+		&__item-text {
+			margin-right: 10px;
+		}
+	}
 }
 
 @media (max-width:450px) {
-	.footer {
-		&__inner {
-			justify-content: center;
-			align-items: start;
+	.works-path {
+		.works-path__item-title {
+			font-size: 16px;
 		}
+	}
+
+	%title-font {
+		font-size: 28px;
+	}
+
+
+	.footer {
 
 		&__form {
 			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
 		}
 
 		&__form-input {
@@ -155,6 +438,24 @@
 
 		&__content {
 			padding: 60px 0 30px 0px;
+		}
+	}
+
+	.about {
+		.about__title {
+			font-size: 22px;
+		}
+	}
+
+	.inspiration::after {
+		height: 450px;
+	}
+
+	.contact {
+
+		&__form-btn,
+		&__form-input {
+			width: 100%;
 		}
 	}
 }

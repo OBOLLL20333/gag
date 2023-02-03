@@ -19,12 +19,10 @@ body {
 }
 
 .main {
-	flex: 1 0 auto;
+	flex-grow: 1;
 }
 
-.footer {
-	flex: 0 0 auto;
-}
+.footer {}
 
 .container {
 	max-width: 1140px;
@@ -83,4 +81,32 @@ body {
 		padding: 0px 0px 0px 15px;
 	}
 
+}
+
+.bradcrumbs {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 14px;
+	position: relative;
+	z-index: 4;
+
+	&__list {
+		display: flex;
+		overflow-x: auto;
+	}
+
+	&__item {
+		position: relative;
+		padding-right: 8px;
+	}
+
+	&__item:not(:last-child)::after {
+		content: '/';
+		position: absolute;
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 200%;
+		color: #5A5A5A;
+	}
 }

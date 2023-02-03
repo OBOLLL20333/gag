@@ -37,8 +37,7 @@
 	}
 
 	&__list-link {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		line-height: 138%;
 		color: rgba(54, 56, 56, 0.9033);
 	}
@@ -106,8 +105,7 @@
 
 	&__title {
 		color: $title;
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		line-height: 142%;
 		text-align: center;
@@ -154,8 +152,9 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 722px;
+			height: 79.2%;
 			z-index: -1;
+			padding-bottom: 30px;
 		}
 	}
 
@@ -169,7 +168,7 @@
 
 	&__slider-img {
 		margin: 0px 0px 0px -14%;
-		min-width: 703px;
+		max-width: 703px;
 		height: 815px;
 		object-fit: cover;
 	}
@@ -181,8 +180,7 @@
 	}
 
 	&__slider-title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 110px;
 		line-height: 122%;
 		color: $title;
@@ -191,7 +189,7 @@
 
 		&::after {
 			content: '';
-			top: 295px;
+			top: 2.7em;
 			left: 0;
 			position: absolute;
 			width: 185px;
@@ -211,8 +209,7 @@
 	padding: 45px 0 35px;
 
 	&__title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		line-height: 142%;
 		color: $title;
@@ -279,8 +276,7 @@
 	}
 
 	&__info-title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 20px;
 		line-height: 1.2;
 		color: $title;
@@ -314,11 +310,9 @@
 	background-image: url(../images/content/decor-img.jpg);
 	border-top-style: cover;
 	background-repeat: no-repeat;
-	min-height: 600px;
 
 	&__tile {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 60px;
 		line-height: 133%;
 		color: $title;
@@ -348,8 +342,7 @@
 	padding: 80px 0 30px;
 
 	&__title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		line-height: 142%;
 		text-align: center;
@@ -425,8 +418,7 @@
 
 	&__item-title {
 		margin-left: 13px;
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		line-height: 144%;
 		color: $title;
 	}
@@ -515,8 +507,7 @@
 	padding: 0px 0px 100px 0px;
 
 	&__title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		color: $title;
 		line-height: 142%;
@@ -564,36 +555,14 @@
 	&__item-title-link {}
 
 	&__item-title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 24px;
 		line-height: 158%;
 		color: $title;
 	}
 }
 
-.bradcrumbs {
-	background: rgba(#DFDFDF, .5);
-	padding: 13px 14px;
-	position: relative;
-	z-index: 4;
 
-	&__list {
-		display: flex;
-	}
-
-	&__item:not(:last-child)::after {
-		content: '/';
-		margin-left: -4px;
-		margin-right: 4px;
-	}
-
-	&__link {
-		font-size: 14px;
-		line-height: 200%;
-		color: #5A5A5A;
-	}
-}
 
 .about {
 
@@ -608,8 +577,7 @@
 	}
 
 	&__prev-title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 60px;
 		line-height: 133%;
 		color: #363838;
@@ -621,8 +589,7 @@
 	}
 
 	&__title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		line-height: 167%;
 		color: #363838;
@@ -696,8 +663,7 @@
 	}
 
 	&__title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		font-size: 36px;
 		line-height: 167%;
 		color: #363838;
@@ -765,6 +731,10 @@
 .map {
 	margin-top: -53px;
 	margin-bottom: 50px;
+
+	iframe {
+		height: 578px;
+	}
 }
 
 .contact {
@@ -867,6 +837,7 @@
 		padding: 6px 70px;
 		cursor: pointer;
 		min-width: 181px;
+		border: none;
 	}
 
 }
@@ -1138,8 +1109,6 @@
 
 	&__autor {}
 }
-
-
 
 .article-slider {
 	&__arrow {
@@ -1420,10 +1389,7 @@
 
 }
 
-
-
 .blog-one-text {}
-
 
 .blog__blockquote-author::before {
 	margin-right: auto;
@@ -1447,8 +1413,7 @@
 	}
 
 	&__info-title {
-		font-family: 'Montserrat';
-		font-weight: 700;
+		@extend %title-font;
 		line-height: 144%;
 		color: #363838;
 
