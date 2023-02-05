@@ -28,6 +28,30 @@
 	}
 }
 
+@media (max-width:1050px) {
+	.blog {
+		&__inner {
+			flex-wrap: wrap;
+		}
+
+		&__items {
+			max-width: 100%;
+		}
+
+		&__item-img {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	.aside {
+		flex: 0 1 100%;
+		margin-left: 0;
+		order: -1;
+		margin-bottom: 50px;
+	}
+
+}
 
 
 @media (max-width:992px) {
@@ -419,6 +443,26 @@
 			margin-right: 10px;
 		}
 	}
+
+	.recent-posts {
+		.recent-posts__title {
+			font-size: 16px;
+		}
+	}
+
+	.blog {
+
+		.blog__item-title {
+			font-size: 24px;
+		}
+
+		.blog__blockquote-author,
+		.blog__tags-title,
+		.blog__category-title {
+			font-size: 16px;
+		}
+	}
+
 
 }
 
