@@ -49,22 +49,21 @@ $(function () {
 				}
 			},
 			{
-				breakpoint: 768,
+				breakpoint: 841,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
 				}
 			},
 			{
-				breakpoint: 655,
+				breakpoint: 550,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-					dots: false,
 				}
 			},
 			{
-				breakpoint: 455,
+				breakpoint: 376,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,

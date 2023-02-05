@@ -300,15 +300,11 @@
 			width: 100%;
 		}
 	}
-}
 
-@media (max-width:585px) {
-	.contact-slider {
-		.contact-slider .slick-dots {
-			display: none;
-		}
+
+	.slick-dots li {
+		margin: 0 5px;
 	}
-
 }
 
 
@@ -423,6 +419,7 @@
 			margin-right: 10px;
 		}
 	}
+
 }
 
 @media (max-width:450px) {
